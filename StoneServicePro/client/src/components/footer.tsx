@@ -133,7 +133,7 @@ export default function Footer() {
                 className="flex items-center text-sm"
               >
                 <MapPin className="text-construction-orange mr-2 h-4 w-4" />
-                <span>公司地址待補充</span>
+                <span>中壢區環北路400號17樓</span>
               </motion.div>
 
               <motion.div
@@ -157,7 +157,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300"
         >
-          <p>&copy; 2024 上吉錸拆除工程. 版權所有</p>
+          <p>&copy; 2024 中壢打石拆除工程行. 版權所有</p>
         </motion.div>
       </div>
     </footer>

@@ -6,6 +6,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
+// 讓 attached_assets 資料夾可被瀏覽器存取影片
+app.use('/attached_assets', express.static(path.join(__dirname, 'attached_assets')));
 const PORT = process.env.PORT || 3000;
 
 // 提供靜態檔案 (前端 build 結果)
