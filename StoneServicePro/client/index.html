@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
   <head>
-<form id="contactForm">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     
@@ -208,6 +207,13 @@
 </script>
   </head>
   <body>
+  <form id="contactForm" style="padding:100px; text-align:center;">
+    <h2>聯絡我們</h2>
+    <p>有任何拆除需求歡迎洽詢！</p>
+    <input type="text" name="name" placeholder="姓名" required />
+    <input type="tel" name="phone" placeholder="電話" required />
+    <button type="submit">送出</button>
+  </form>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
@@ -237,15 +243,14 @@
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('contactForm');
-    if (form) {
-      form.addEventListener('submit', function () {
-        gtag('event', 'conversion', {'send_to': 'AW-17286917434/q5dYCKiBvOoaELrahbNA'});
-      });
-    }
-  });
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('contactForm');
+      if (form) {
+        form.addEventListener('submit', function () {
+      gtag('event', 'conversion', {'send_to': 'AW-17286917434/q5dYCKiBvOoaELrahbNA'});
+    });
+  }
+});
 </script>
-</form>
   </body>
 </html>
