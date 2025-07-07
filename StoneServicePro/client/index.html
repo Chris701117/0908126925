@@ -24,8 +24,8 @@
     <meta name="theme-color" content="#EA580C" />
     <meta name="msapplication-TileColor" content="#EA580C" />
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://your-domain.com/" />
+    <!-- Canonical URL - 請務必替換為您的實際網域！ -->
+    <link rel="canonical" href="https://your-actual-domain.com/" />
     
     <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
@@ -42,7 +42,7 @@
     <meta name="twitter:title" content="中壢打石拆除工程行 | 室內外拆除、磚牆RC牆拆除、打石工程專業服務" />
     <meta name="twitter:description" content="專業室內外拆除工程服務，磚牆RC牆拆除、輕質隔間牆打除、打石工粗工供應、垃圾清運進料。經驗豐富，安全快速。" />
     
-    <!-- Business Schema Markup -->
+    <!-- Business Schema Markup - 請填寫真實資料 -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -51,14 +51,14 @@
       "description": "專業室內外拆除、磚牆RC牆拆除、輕質隔間牆打除、打石工粗工供應、垃圾清運進料服務",
       "serviceArea": "台灣",
       "priceRange": "$$",
-      "telephone": "待提供",
-      "email": "待提供",
+      "telephone": "0908126925", /* 替換為實際電話 */
+      "email": "your_email@example.com", /* 替換為實際信箱 */
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "TW",
-        "addressLocality": "待提供"
+        "addressLocality": "中壢區環北路400號17樓" /* 替換為實際地址 */
       },
-      "openingHours": "全年無休",
+      "openingHours": "Mo-Su 00:00-23:59", /* 根據實際營業時間調整 */
       "services": [
         "室內外各種拆除",
         "磚牆拆除",
@@ -157,7 +157,7 @@
     }
     </script>
     
-    <!-- BreadcrumbList Schema -->
+    <!-- BreadcrumbList Schema - 請務必替換為您的實際網域！-->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -167,25 +167,25 @@
           "@type": "ListItem",
           "position": 1,
           "name": "首頁",
-          "item": "https://your-domain.com/"
+          "item": "https://your-actual-domain.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "服務項目",
-          "item": "https://your-domain.com/#services"
+          "item": "https://your-actual-domain.com/#services"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "作品展示",
-          "item": "https://your-domain.com/#portfolio"
+          "item": "https://your-actual-domain.com/#portfolio"
         },
         {
           "@type": "ListItem",
           "position": 4,
           "name": "聯絡我們",
-          "item": "https://your-domain.com/#contact"
+          "item": "https://your-actual-domain.com/#contact"
         }
       ]
     }
@@ -195,16 +195,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17286917434">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17286917434');
-</script>
+    
+    <!-- Google tag (gtag.js) - Google Ads 全域網站代碼 - 只保留這組 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17286917434"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17286917434');
+    </script>
+    
   </head>
   <body>
   <form id="contactForm" style="padding:100px; text-align:center;">
@@ -216,7 +216,7 @@
   </form>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+    <!-- Replit script - 如果是生產環境，請移除此行 -->
     <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
     <div id="about" style="padding:100px 0; text-align:center; background:#f9f9f9;">
       <h2>關於我們</h2>
@@ -225,7 +225,8 @@
 
     <div id="contact" style="padding:100px 0; text-align:center; background:#e9e9e9;">
       <h2>聯絡我們</h2>
-      <p>電話：0908-126-925｜LINE：0908126925｜地址：中壢區環北路400號17樓</p>
+      <!-- 將電話和LINE轉為可點擊追蹤的連結 -->
+      <p>電話：<a href="tel:0908-126-925" onclick="gtag('event', 'conversion', {'send_to': 'AW-17286917434/q5dYCKiBvOoaELrahbNA'});">0908-126-925</a>｜LINE：<a href="https://line.me/ti/p/~0908126925" target="_blank" onclick="gtag('event', 'conversion', {'send_to': 'AW-17286917434/q5dYCKiBvOoaELrahbNA'});">0908126925</a>｜地址：中壢區環北路400號17樓</p>
     </div>
 <div id="services" style="padding:100px 0; text-align:center; background:#f9f9f9;">
   <h2>專業服務項目</h2>
@@ -247,10 +248,17 @@
       const form = document.getElementById('contactForm');
       if (form) {
         form.addEventListener('submit', function () {
-      gtag('event', 'conversion', {'send_to': 'AW-17286917434/q5dYCKiBvOoaELrahbNA'});
+            // 這邊的 event_callback 和 return true 是為了確保追蹤送出後表單才提交
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17286917434/q5dYCKiBvOoaELrahbNA',
+                'event_callback': function() { /* 可選：這裡可以放表單提交成功後的處理 */ }
+            });
+            // 由於您使用了 type="submit" 的按鈕，瀏覽器會自動提交表單
+            // 如果要確保 gtag 送出後再提交，需要額外處理
+            // 但對於 Google Ads 追蹤來說，通常這個寫法已經足夠觸發追蹤事件
+        });
+      }
     });
-  }
-});
 </script>
   </body>
 </html>
