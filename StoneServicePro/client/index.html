@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
   <head>
+<form id="contactForm">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     
@@ -235,5 +236,16 @@
   <p>近期拆除工程限時優惠中，立即洽詢獲得免費報價。</p>
 </div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+    if (form) {
+      form.addEventListener('submit', function () {
+        gtag('event', 'conversion', {'send_to': 'AW-17286917434/q5dYCKiBvOoaELrahbNA'});
+      });
+    }
+  });
+</script>
+</form>
   </body>
 </html>
