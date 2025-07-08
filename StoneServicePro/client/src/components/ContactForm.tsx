@@ -13,14 +13,22 @@ declare global {
 const ContactForm: React.FC = () => {
   
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    // 這裡可以處理表單提交的後端邏輯，但為了追蹤，我們主要用 gtag
+    // ★★★ 關鍵：防止頁面重新整理，確保 gtag 有時間執行 ★★★
+    event.preventDefault(); 
+
+    // 這裡可以處理表單提交的後端邏輯，例如使用 fetch 或 axios
+    // 在真實情境中，建議在確認後端成功收到資料後再呼叫 gtag
     
     // 觸發 Google Ads 轉換事件
     if (window.gtag) {
       window.gtag('event', 'conversion', {
         'send_to': 'AW-17286917434/q5dYCKiBvOoaELrahbNA'
       });
+      console.log('Google Ads conversion event sent!');
     }
+    
+    // 可以在這裡提示使用者「已成功送出」或導向感謝頁面
+    alert('感謝您的諮詢，我們將盡快與您聯絡！');
   };
 
   return (
