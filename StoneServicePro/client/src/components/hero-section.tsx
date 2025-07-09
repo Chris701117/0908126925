@@ -61,13 +61,14 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <Button
-            onClick={() => scrollToSection("contact")}
-            className="bg-construction-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-roboto font-medium transition-all duration-300 hover:scale-105 shadow-lg"
-          >
-            <Phone className="mr-2 h-5 w-5" />
-            立即諮詢報價
-          </Button>
+<a
+  href="tel:0908126925"
+  className="bg-construction-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-roboto font-medium transition-all duration-300 hover:scale-105 shadow-lg inline-flex items-center justify-center"
+>
+  <Phone className="mr-2 h-5 w-5" />
+  立即諮詢報價
+</a>
+
           
           <Button
             onClick={() => scrollToSection("portfolio")}
