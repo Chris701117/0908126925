@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Hammer, Phone, Mail, Clock, MapPin, Building } from "lucide-react";
+import { Hammer, Phone, Mail, Clock, MapPin } from "lucide-react";
 import { SiLine } from "react-icons/si";
 
 const services = [
@@ -49,7 +49,6 @@ export default function Footer() {
             >
               20年專業經驗，提供優質拆除工程服務，是您最值得信賴的合作夥伴。
             </motion.p>
-
           </div>
 
           {/* Services */}
@@ -89,6 +88,7 @@ export default function Footer() {
           >
             <h4 className="font-roboto font-medium text-lg mb-4">聯絡資訊</h4>
             <div className="space-y-2 text-gray-300">
+              {/* --- 修改開始 (1/2): 將電話改為 E.164 格式並加上可點擊的連結 --- */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -97,10 +97,13 @@ export default function Footer() {
                 className="flex items-center text-sm"
               >
                 <Phone className="text-construction-orange mr-2 h-4 w-4" />
-                <span className="hover:text-construction-orange transition-colors">
-                  0908-126-925
-                </span>
+                <a href="tel:+886908126925" className="hover:text-construction-orange transition-colors">
+                  +886-908-126-925
+                </a>
               </motion.div>
+              {/* --- 修改結束 (1/2) --- */}
+
+              {/* --- 修改開始 (2/2): 將 LINE 的電話號碼也一併修正，確保格式一致 --- */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -110,9 +113,11 @@ export default function Footer() {
               >
                 <SiLine className="text-construction-orange mr-2 h-4 w-4" />
                 <span className="hover:text-green-400 transition-colors">
-                  0908126925
+                  +886-908-126-925 (可加LINE)
                 </span>
               </motion.div>
+              {/* --- 修改結束 (2/2) --- */}
+
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -121,9 +126,9 @@ export default function Footer() {
                 className="flex items-center text-sm"
               >
                 <Mail className="text-construction-orange mr-2 h-4 w-4" />
-                <span className="hover:text-construction-orange transition-colors">
+                <a href="mailto:a0908126925@gmail.com" className="hover:text-construction-orange transition-colors">
                   a0908126925@gmail.com
-                </span>
+                </a>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
